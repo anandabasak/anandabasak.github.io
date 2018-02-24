@@ -1,0 +1,177 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet prefetch" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+  
+  body{
+  margin:0;
+  padding:0;
+  color:#666;
+  background:#fff;
+  font-family: 'Anonymous Pro', monospace;  
+  font-size:20px;
+}
+nav{
+  font-size:13px;
+  background:#f5f5f5;
+  -webkit-transition:all .3s;
+  transition:all .3s;
+}
+@media(max-width:768px){
+nav{
+    padding:5px;
+    text-align:center;
+    margin:0 auto;
+    width:100%
+}
+    nav .active a{
+      color:#722872;
+      background:#bbb;
+      -webkit-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+              box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+.nav>li{
+    height:100%;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+  }
+.nav>li a{
+      color:#ffffff;
+      padding:10px 20px;
+    }
+.nav>li a:hover{
+        color:#722872;
+        background:#bbb;
+        -webkit-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+                box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+      }
+  
+  main >*:not(.scroll-top){
+    max-width:1024px;
+    margin:0 auto;
+    -webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+main header{
+    background:#aaa;
+    color:#fff;
+    text-align:right;
+    padding:70px 10% 50px;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    -ms-flex-line-pack:distribute;
+        align-content:space-around;
+  }
+  
+  .round-border{
+     border-color: #aaa;
+    border-width: 10px;
+    webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-radius: 60%;
+    }
+  .intro-text{
+    font-size:25px;
+  }
+  .portfolio{
+    text-align:center;
+    font-size=12px; 
+  }
+  .row{
+  text-align: center;
+  }
+  .captionBD{
+    font-family="monospace";
+    
+  }
+  .img{
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+.line-1{
+  border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    margin-left:auto;
+  text-align:center;  
+  margin-right:auto;
+    white-space: nowrap;
+    overflow: hidden;
+      
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(9) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+  
+  .bb {
+    padding-top:155px;
+  }
+</style>
+
+  <header class="navbar navbar-default navbar-fixed-top" id="banner" max-height="55dp">
+  <div class="container"><a class="scrollable" href="#top"><img src="http://alexanderbaldwin.com/wp-content/uploads/2017/10/AB_WEB_Favicon.jpg" alt="Ananda Basak" width="60px" height="60px" title="Ananda Basak Portfolio"></a>
+    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="scrollable" href="#top">About</a></li>
+        <li><a class="scrollable" href="#portfolio">Portfolio</a></li>
+        <li><a class="scrollable" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <header>
+    <div class="row">
+    <div class="intro-text col-md-6">
+      <br>
+      <br>
+      <p class="line-1 anim-typewriter">Welcome!!</p>
+      <br>
+      <p>Hello, I am Ananda Basak, residing at Kolkata, Currently pursuing B.Tech Mechanical Engg, Love Coding with Coffee</p>
+      <hr class="star-bright"><span class="skills">Android Developer - Web Developer - CMTE &amp; Substratum Themer</span>
+    </div>
+      <div class="col-md-6 bb"><img src="https://scontent.fbom1-2.fna.fbcdn.net/v/t1.0-9/27067680_1569209956504388_2107626856849939840_n.jpg?oh=12d8c8cb21bb05eca5bbda7fb9d87b22&amp;oe=5B133C05" alt="Profile Image" title="Profile Pic" class=" round-border img-responsive"></div>
+    </div>
+  </header>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4"><a href="https://play.google.com/store/apps/details?id=com.anandabasak.extendedUI&hl=en"><img src="https://lh3.googleusercontent.com/2DJb_Au9vS1pGCAvONTFVOmzqu4B3NcxY1SAIz7irHN5iusHhe3RAnSFq7tXZsXrtQ=w300-rw"class="img-responsive img"></a><div class="captionBD">[Substratum] BlueDragoon</div></div>
+      
+      <div class="col-md-4 "><a href="https://play.google.com/store/apps/details?id=com.anandabasak.lightui&hl=en"><img src="https://lh3.googleusercontent.com/SXwCa0lOd1GklYop-_CGnKzjgfZH9bmvC29q-15lIia7e_eVji0xffGTxyobyu0haoI=w300-rw"class="img-responsive img"></a><div class="captionBD">Puzzled UI- CM Theme</div></div>
+      
+      <div class="col-md-4"><a href="https://play.google.com/store/apps/details?id=com.anandroidstudios.myapplication&hl=en"><img src="https://lh3.googleusercontent.com/3lDUiit4n1sMNx6D3rXnSMt5iq8oNaM-Cf-YK7E7ZbhYjcDDOoGSCZDgj6c09A68GD8=w300-rw" class="img-responsive img"></a><div class="captionBD">Tuik Browser</div></div>
+    </div>
+    <br>
+  </section>
+  </main>
+  
+  
+  
+
+
