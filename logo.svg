@@ -13,7 +13,7 @@
       .cls-3 {
         font-size: 17px;
         fill: #4d4d4d;
-        stroke: #000;
+        stroke: #4d4d4d;
         stroke-miterlimit: 10;
         font-family: EdwardianScriptITC, Edwardian Script ITC;
       }
