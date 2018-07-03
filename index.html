@@ -1,6 +1,9 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <link rel="stylesheet prefetch" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+   
+            
 <style>
   
   body{
@@ -8,7 +11,7 @@
   padding:0px;
   color:#666;
   background:#fff;
-  font-family: 'Anonymous Pro', monospace;  
+  font-family: 'Anonymous Pro', 'lato' , 'monospace';  
   font-size:20px;
 }
 nav{
@@ -19,20 +22,13 @@ nav{
   transition:all .3s;
   
 }
-  .column{
-  float: left;
-    width: 30%;
-    padding: 30px;
-    margin: 15px;
-    text-align: center;
-    font-size: auto;
-    cursor: pointer;
-    
-    font-family: helvetica;
-  }
+  
   .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    padding: 20px;
+    font-family : helvetica;
+    margin: 30px;
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -54,7 +50,7 @@ nav{
   border-color:#ffffff;
 }
 #banner .container{
-    width:95%;
+    width:100%;
   
     -webkit-box-pack:justify;
         -ms-flex-pack:justify;
@@ -134,6 +130,9 @@ main header{
   .row{
   text-align: center;
   }
+  .center{
+  margin: auto;
+  }
  
   .captionBD{
     font-family="monospace";
@@ -160,11 +159,15 @@ main header{
     overflow: hidden;
       
 }
+  .about{
+    font-family: lato;
+  }
 
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(10) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
+  font-family: monospace;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -177,8 +180,8 @@ main header{
   
   .bb {
     margin-left:auto;
-  text-align:center;  
-  margin-right:auto;
+    text-align:center;  
+    margin-right:auto;
     max-width:320px;
     padding-top:125px;
   }
@@ -187,30 +190,25 @@ main header{
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-  <header class="navbar navbar-default navbar-fixed-top" id="banner">
-  <div class="container"><a class="scrollable" href="#top"><img src="anandabasak.github.io/logo.svg" width="110px" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-    <nav class="collapse navbar-collapse" id="navbar" role="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li style="
-    height: 20px;
-"><a class="scrollable" href="#top" style="
-    height: 40px;
-">About</a></li>
-        <li style="
-    height: 20px;
-"><a class="scrollable" href="#portfolio" style="
-    width: 120px;
-    height: 40px;
-">Portfolio</a></li>
-        <li style="
-    height: 20px;
-"><a class="scrollable" href="#contact" style="
-    height: 40px;
-">Contact</a></li>
+  <nav class="navbar navbar-default navbar-fixed-top" id="banner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="scrollable" href="#top"><img src="anandabasak.github.io/logo.svg"/>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav side-nav">
+        <li ><a href="#top" style="height: 40px"class="active">About</a></li>
+        <li ><a href="#portfolio" style="width: 120px height: 40px">Portfolio</a></li>
+        <li><a href="#contact" style="height: 40px">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
 
 <main>
   <header>
@@ -220,8 +218,8 @@ main header{
       <br>
       <p class="line-1 anim-typewriter">Welcome!!</p>
       <br>
-      <p>Hello, I am Ananda Basak, residing at Kolkata, Currently pursuing B.Tech Mechanical Engg, Love Coding with Coffee</p>
-      <hr class="star-bright"><span class="skills">Android Developer - Web Developer - CMTE &amp; Substratum Themer</span>
+      <p class="about">Hello, I am Ananda Basak, residing at Kolkata, Currently pursuing B.Tech Mechanical Engg, Love Coding with Coffee</p>
+      <hr class="star-bright"><span class="skills about">Android Developer - Web Developer - CMTE &amp; Substratum Themer</span>
     </div>
       <div class="col-md-6 bb"><img src="anandabasak.github.io/26962540_1569209956504388_2107626856849939840_o.jpg" alt="Profile Image" title="Profile Pic" class=" round-border img-responsive"></div>
     </div>
@@ -231,12 +229,12 @@ main header{
     <br>
     <h2>Portfolio</h2>
     <br>
-    <div class="row">
-      <div class="column card" width="30%"><a href="https://play.google.com/store/apps/details?id=com.anandabasak.extendedUI&hl=en"><img src="https://lh3.googleusercontent.com/2DJb_Au9vS1pGCAvONTFVOmzqu4B3NcxY1SAIz7irHN5iusHhe3RAnSFq7tXZsXrtQ=w300-rw"class="img-responsive img"></a><div class="captionBD">[Substratum] BlueDragoon</div></div>
+    <div class="row center">
+      <div class="col-sm-3 span-1-of-3 card" ><a href="https://play.google.com/store/apps/details?id=com.anandabasak.extendedUI&hl=en"><img src="https://lh3.googleusercontent.com/2DJb_Au9vS1pGCAvONTFVOmzqu4B3NcxY1SAIz7irHN5iusHhe3RAnSFq7tXZsXrtQ=w300-rw"class="img-responsive img"></a><div class="captionBD">[Substratum] BlueDragoon</div></div>
       
-      <div class="column card" width="30%" ><a href="https://play.google.com/store/apps/details?id=com.anandabasak.lightui&hl=en"><img src="https://lh3.googleusercontent.com/SXwCa0lOd1GklYop-_CGnKzjgfZH9bmvC29q-15lIia7e_eVji0xffGTxyobyu0haoI=w300-rw"class="img-responsive img"></a><div class="captionBD">Puzzled UI- CM Theme</div></div>
+      <div class="col-sm-3 card" ><a href="https://play.google.com/store/apps/details?id=com.anandabasak.lightui&hl=en"><img src="https://lh3.googleusercontent.com/SXwCa0lOd1GklYop-_CGnKzjgfZH9bmvC29q-15lIia7e_eVji0xffGTxyobyu0haoI=w300-rw"class="img-responsive img"></a><div class="captionBD">Puzzled UI- CM Theme</div></div>
       
-      <div class="column card" width="30%"><a href="https://play.google.com/store/apps/details?id=com.anandroidstudios.myapplication&hl=en"><img src="https://lh3.googleusercontent.com/3lDUiit4n1sMNx6D3rXnSMt5iq8oNaM-Cf-YK7E7ZbhYjcDDOoGSCZDgj6c09A68GD8=w300-rw" class="img-responsive img"></a><div class="captionBD">Tuik Browser</div></div>
+      <div class="col-sm-3 card" ><a href="https://play.google.com/store/apps/details?id=com.anandroidstudios.myapplication&hl=en"><img src="https://lh3.googleusercontent.com/3lDUiit4n1sMNx6D3rXnSMt5iq8oNaM-Cf-YK7E7ZbhYjcDDOoGSCZDgj6c09A68GD8=w300-rw" class="img-responsive img"></a><div class="captionBD">Tuik Browser</div></div>
     </div>
     <br>
   </section>
